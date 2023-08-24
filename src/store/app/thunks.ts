@@ -44,6 +44,9 @@ export const removeProductAsync = createAsyncThunk(
       body: JSON.stringify(params),
     }).then((resp) => resp.json());
 
+    // TODO
+    // Remove coupons if they are no longer valid
+
     return newCart as Cart;
   }
 );

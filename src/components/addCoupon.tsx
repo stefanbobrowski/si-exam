@@ -31,7 +31,7 @@ const AddCoupon = () => {
           cart.coupons?.map((coupon) => (
             <div key={coupon.id} className={styles.couponListItem}>
               <p>
-                {coupon.name} - ${coupon.discount} -
+                {coupon.name} - ${coupon.discount.toFixed(2)}
               </p>
               <button
                 type='button'

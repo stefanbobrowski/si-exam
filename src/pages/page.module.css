@@ -359,7 +359,18 @@
   padding: 1rem;
 }
 
-.couponContainer {
+.cartRundown p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartRundown span {
+  display: inline-flex;
+  width: 80px;
+  text-align: left;
+}
+
+.car .couponContainer {
   padding: 1rem;
   margin: 1rem;
 }

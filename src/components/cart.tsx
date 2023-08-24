@@ -97,7 +97,7 @@ const Cart = () => {
         <div>
           <div className={styles.cartRundown}>
             <p>
-              <b>Sub-total:</b> ${subtotal.toFixed(2)}
+              <b>Sub-total:</b> <span>${subtotal.toFixed(2)}</span>
             </p>
             <p>
               <b>Coupons:</b>{' '}
@@ -106,10 +106,10 @@ const Cart = () => {
               </span>
             </p>
             <p>
-              <b>Shipping:</b> ${shippingPrice.toFixed(2)}
+              <b>Shipping:</b> <span>${shippingPrice.toFixed(2)}</span>
             </p>
             <p>
-              <b>Taxes:</b> ${taxes.toFixed(2)}
+              <b>Taxes:</b> <span>${taxes.toFixed(2)}</span>
             </p>
             <p>
               <b>Total:</b> <span>${total.toFixed(2)}</span>
