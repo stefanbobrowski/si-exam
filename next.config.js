@@ -4,7 +4,6 @@ const nextConfig = {
     appDir: false,
   },
   output: 'export',
-  distDir: '_static',
   images: {
     unoptimized: true,
   },
