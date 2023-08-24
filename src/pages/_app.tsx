@@ -84,7 +84,6 @@ const App = ({ Component }: { Component: React.ComponentType }) => {
             priority
           />
         </Link>
-
         {cartIsLoading && (
           <div className={styles.loader}>
             <Image

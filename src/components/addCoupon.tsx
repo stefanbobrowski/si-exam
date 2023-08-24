@@ -27,16 +27,23 @@ const AddCoupon = () => {
 
       <div>
         <h3>Coupons: </h3>
-        {cart.coupons?.map((coupon) => (
-          <div key={coupon.id} className={styles.couponListItem}>
-            <p>
-              {coupon.name} - ${coupon.discount} -
-            </p>
-            <button type='button' onClick={() => handleRemoveCoupon(coupon.id)}>
-              ❌
-            </button>
-          </div>
-        ))}
+        {cart.coupons?.length ? (
+          cart.coupons?.map((coupon) => (
+            <div key={coupon.id} className={styles.couponListItem}>
+              <p>
+                {coupon.name} - ${coupon.discount} -
+              </p>
+              <button
+                type='button'
+                onClick={() => handleRemoveCoupon(coupon.id)}
+              >
+                ❌
+              </button>
+            </div>
+          ))
+        ) : (
+          <p>No coupons</p>
+        )}
       </div>
     </div>
   );
